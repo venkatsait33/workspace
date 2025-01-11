@@ -1,7 +1,8 @@
-import Cards from './Cards'
 import Cover from './Cover'
 import Explore_spaces from './Explore_spaces'
+import Home_Footer from './Home_Footer'
 import Our_Values from './Our_Values'
+import PricingPlan from './PricingPlan'
 import TestimonialCard from './Testimonial'
 
 const Home = () => {
@@ -11,6 +12,8 @@ const Home = () => {
             <Our_Values />
             <Explore_spaces />
             <TestimonialCard />
+            <PricingPlan />
+            <Home_Footer/>
         </div>
     )
 }

@@ -43,28 +43,35 @@ const TestimonialCard = () => {
   return (
     <div className="testimonial-container">
       <div className="testimonial-card">
+        
         <div className="absolute ">
-          <p className="text-xl text-white">{testimonials[currentIndex].text}</p>
-          <div className="testimonial-info">
-            <h3 className="absolute bg-white top-[250%] pr-3 rounded-[0_10px_0_0] left-0 z-[2] text-xl pl-2 text-[#555]">{testimonials[currentIndex].name}</h3>
-            <p className="absolute text-xl pl-2 pr-3  rounded-[0_10px_0_0] bg-white top-[295%] left-0 z-[2] text-[#555] ">{testimonials[currentIndex].role}</p>
+          <p className="overflow-auto text-2xl text-black text-bold">{testimonials[currentIndex].text}</p>
+          <div className="">
+            <h3 className="absolute bg-white max-md:top-[210%] lg:top-[370%] pr-3 rounded-[0_10px_0_0] left-0 z-[2] text-xl pl-2 text-[#555]">{testimonials[currentIndex].name}</h3>
+            <p className="absolute text-xl pl-2 pr-3  rounded-[0_10px_0_0] bg-white max-md:top-[250%] lg:top-[450%] left-0 z-[2] text-[#555] ">{testimonials[currentIndex].role}</p>
           </div>
+          
         </div>
         <img
           src={testimonials[currentIndex].image}
           alt={testimonials[currentIndex].name}
           className="testimonial-image"
         />
+        <div className="">
+          <div className="flex flex-col justify-between  items-end w-full h-[300px] p-2 border border-gray-300 rounded-lg shadow-md ">
+            <button className="arrow up" onClick={handleUpClick}>
+              <BsArrowUp />
+            </button>
+            <button className="arrow down" onClick={handleDownClick}>
+              <BsArrowDown />
+            </button>
+          </div>
+        </div>
+        
+       
       </div>
 
-      <div className="">
-        <button className="arrow up" onClick={handleUpClick}>
-          <BsArrowUp/>
-        </button>
-        <button className="arrow down" onClick={handleDownClick}>
-          <BsArrowDown/>
-        </button>
-      </div>
+      
     </div>
   );
 };
