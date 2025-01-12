@@ -3,7 +3,7 @@ import { MdLocationPin, MdMailOutline } from "react-icons/md";
 const Home_Footer = () => {
     return (
         <div>
-            <div className="flex">
+            <div className="flex justify-between px-20 py-10 bg-gray-100 max-md:flex-col max-md:px-5 max-md:py-5">
                 <div className="flex-col flex-1 p-4 space-y-2">
                     <div>
                         <h1 className="text-base font-semibold text-black">Let &apos; s Keep in Touch with Us!</h1>
@@ -59,7 +59,12 @@ const Home_Footer = () => {
 
                 </div>
                 <div className="flex-1">
-
+                    <div id="outer">
+                        <div id="inner-container">
+                            <div className="innertext"><span>A test</span></div>
+                            <div className="innertext"><span>A test with a second line</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

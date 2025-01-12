@@ -41,37 +41,24 @@ const TestimonialCard = () => {
   };
 
   return (
-    <div className="testimonial-container">
-      <div className="testimonial-card">
-        
-        <div className="absolute ">
-          <p className="overflow-auto text-2xl text-black text-bold">{testimonials[currentIndex].text}</p>
-          <div className="">
-            <h3 className="absolute bg-white max-md:top-[210%] lg:top-[370%] pr-3 rounded-[0_10px_0_0] left-0 z-[2] text-xl pl-2 text-[#555]">{testimonials[currentIndex].name}</h3>
-            <p className="absolute text-xl pl-2 pr-3  rounded-[0_10px_0_0] bg-white max-md:top-[250%] lg:top-[450%] left-0 z-[2] text-[#555] ">{testimonials[currentIndex].role}</p>
-          </div>
-          
+    <div>
+      <div id="outer" style={{ backgroundImage: `url(${testimonials[currentIndex].image})` }}>
+        <div id="inner-container">
+          <p className="absolute w-full mx-auto ml-10 text-4xl text-black -top-[200px] text-bold">{testimonials[currentIndex].text}</p>
+          <div className="innertext"><span>{testimonials[currentIndex].name}</span></div>
+          <div className="innertext"><span>{testimonials[currentIndex].role}</span></div>
         </div>
-        <img
-          src={testimonials[currentIndex].image}
-          alt={testimonials[currentIndex].name}
-          className="testimonial-image"
-        />
-        <div className="">
-          <div className="flex flex-col justify-between  items-end w-full h-[300px] p-2 border border-gray-300 rounded-lg shadow-md ">
-            <button className="arrow up" onClick={handleUpClick}>
+        <div className="flex flex-col items-end justify-between h-full p-12 border rounded-lg shadow-md ">
+          <div className="flex flex-col items-end justify-between h-full p-2 border rounded-lg shadow-md ">
+            <button className="text-2xl text-black arrow up" onClick={handleUpClick}>
               <BsArrowUp />
             </button>
-            <button className="arrow down" onClick={handleDownClick}>
+            <button className="text-2xl text-black arrow down" onClick={handleDownClick}>
               <BsArrowDown />
             </button>
           </div>
         </div>
-        
-       
       </div>
-
-      
     </div>
   );
 };
