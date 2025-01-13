@@ -1,0 +1,35 @@
+import Header from '../../components/Header'
+import Logos from '../../components/Logos'
+import Our_Values from '../../components/Our_Values'
+import Work_Facilities from '../../components/Work_Facilities'
+import Cover from './Cover'
+import './about.css'
+
+const About = () => {
+    return (
+        <div className='relative bg-white'>
+            <Header />
+            <div>
+                <Cover />
+                <div className='flex items-center m-4'>
+                    <div className='w-[30%]'>
+                        <p>Empowering Collaboration</p>
+                        <p>Fostering Innovation</p>
+                    </div>
+                    <div className='w-[70%]'>
+                        <p className='text-xl text-black text-semibold'>
+                            Embark on a journey with WorkScape, a dynamic co- working space where ambition meets community. We redefine the work experience, providing flexible solutions for individuals and teams to thrive in our own vibrant and collaborative environment. Our meticulously designed spaces inspire creativity, foster connections, and provide the ideal backdrop for innovation.
+                        </p>
+                    </div>
+                </div>
+                <Our_Values />
+                <Work_Facilities />
+                <div className='p-2'>
+                    <Logos />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default About

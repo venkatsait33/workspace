@@ -1,3 +1,67 @@
+.coverCard {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #555;
+}
+
+.coverCard::before {
+  content: "";
+  position: absolute;
+  top: -50px; /* Adjust to control the outward curve size */
+  right: -50px; /* Adjust for position */
+  width: 150px; /* Adjust the curve size */
+  height: 150px; /* Adjust the curve size */
+  background-color: white; /* Match your background color */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#cover-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0px;
+}
+
+.inner-text {
+  top: -16px;
+  display: inline;
+  position: relative;
+  border-top-right-radius: 20px;
+  background-color: #fff;
+  padding: 5px 25px 0px 5px;
+  font-size: 20px;
+  color: #000;
+}
+.inner-text:first-child::before,
+.inner-text::after {
+  content: "";
+  display: block;
+  top: -40px;
+  left: 0px;
+  width: 40px; /* double the radius */
+  height: 40px; /* double the radius */
+  background-color: transparent;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 20px 0 0 #fff; /* this to create the inverted corner border radius area, if you desire to change the positon you can control it via the first two values 0 20px which represents the x & y */
+}
+
+.inner-text::before {
+  top: -20px;
+  left: 0;
+}
+
+.inner-text span {
+  position: relative;
+  z-index: 1; /* to overcome the overlapping with the text */
+}
+
 /* Card Container */
 .singleCard {
   position: relative;
@@ -73,8 +137,8 @@
 .card::before {
   content: "";
   position: absolute;
-  top: -30px; /* Adjust to control the outward curve size */
-  right: -30px; /* Adjust for position */
+  top: -20px; /* Adjust to control the outward curve size */
+  right: -20px; /* Adjust for position */
   width: 100px; /* Adjust the curve size */
   height: 100px; /* Adjust the curve size */
   background-color: white; /* Match your background color */
@@ -95,13 +159,20 @@
   z-index: 2;
 }
 
+.arrow-button:hover {
+  background-color: black;
+}
+
 .arrow-icon {
   width: 34px;
   height: 34px;
   color: #555;
 }
+.arrow-icon:hover {
+  color: white;
+}
 
-.testimonial-container{
+.testimonial-container {
   width: 100%;
   height: 400px;
   background-color: aliceblue;
@@ -111,7 +182,7 @@
   position: relative;
 }
 
-.testimonial-card{
+.testimonial-card {
   height: 300px;
   width: 80%;
   background-color: white;
@@ -132,7 +203,7 @@
   height: 100%;
 }
 
-.testimonial-role{
+.testimonial-role {
   position: absolute;
   content: "";
   top: 135px;
@@ -145,8 +216,6 @@
   border-radius: 0 25px 0 0;
 }
 
-
-
 .pricing-card {
   width: 350px;
   height: 400px;
@@ -157,11 +226,11 @@
   margin: auto;
   text-align: center;
   font-size: 16px;
-  position: relative; 
-  margin-top: 20px;/* For overlapping header */
+  position: relative;
+  margin-top: 20px; /* For overlapping header */
 }
 
-.pricing-card:hover{
+.pricing-card:hover {
   background-color: #dbb97f;
   color: white;
 }
@@ -181,7 +250,7 @@
   z-index: 1;
 }
 
-.card-header::before{
+.card-header::before {
   content: "";
   position: relative;
   top: -40px; /* Adjust to control the outward curve size */
@@ -216,7 +285,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.card-footer:hover{
+.card-footer:hover {
   color: white;
 }
 
@@ -226,53 +295,10 @@
   margin: 10px 0;
 }
 
-#cover-card{
-   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  bottom: 0px;
-}
-
-.inner-text {
-  top:-24px;
-  display: inline;
-  position: relative;
-  border-top-right-radius: 20px;
-  background-color: #fff;
-  padding: 5px 25px 0px 5px;
-  font-size: 20px;
-  color: #000;
-}
-.inner-text:first-child::before,
-.inner-text::after {
-  content: "";
-  display: block;
-  top: -40px;
-  left:0px;
-  width: 40px;    /* double the radius */
-  height: 40px;   /* double the radius */
-  background-color: transparent;
-  position: absolute;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0 20px 0 0 #fff;  /* this to create the inverted corner border radius area, if you desire to change the positon you can control it via the first two values 0 20px which represents the x & y */
-}
-
-.inner-text::before {
-  top: -20px;
-  left: 0;
-}
-
-.inner-text span {
-  position: relative;
-  z-index: 1;   /* to overcome the overlapping with the text */
-}
-
 #outer {
   width: 100%;
   height: 400px;
   border-radius: 20px;
- 
   position: relative;
 }
 #inner-container {
@@ -295,12 +321,14 @@
 .innertext::after {
   content: "";
   display: block;
-  width: 40px;    /* double the radius */
-  height: 40px;   /* double the radius */
+  top: -40px;
+  left: -10px;
+  width: 40px; /* double the radius */
+  height: 40px; /* double the radius */
   background-color: transparent;
   position: absolute;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0 20px 0 0 #fff;  /* this to create the inverted corner border radius area, if you desire to change the positon you can control it via the first two values 0 20px which represents the x & y */
+  border-bottom-left-radius: 60px;
+  box-shadow: 0 20px 0 0 #fff; /* this to create the inverted corner border radius area, if you desire to change the positon you can control it via the first two values 0 20px which represents the x & y */
 }
 .innertext::before {
   top: -40px;
@@ -309,6 +337,25 @@
 
 .innertext span {
   position: relative;
-  z-index: 1;   /* to overcome the overlapping with the text */
+  z-index: 1; /* to overcome the overlapping with the text */
+}
+
+#footer-card-outer {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  background-image: url(/src/assets/cover-images/cv5.avif);
+  position: relative;
+  background-color: #fff;
+}
+#footer-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0px;
+  top: 365px;
+  left: 475px;
+  background-color: white;
 }
 

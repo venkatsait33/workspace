@@ -41,19 +41,24 @@ const TestimonialCard = () => {
   };
 
   return (
-    <div>
-      <div id="outer" style={{ backgroundImage: `url(${testimonials[currentIndex].image})` }}>
+    <div className="p-10 mt-10">
+      <div id="outer" style={{
+        backgroundImage: `url(${testimonials[currentIndex].image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
         <div id="inner-container">
-          <p className="absolute w-full mx-auto ml-10 text-4xl text-black -top-[200px] text-bold">{testimonials[currentIndex].text}</p>
+          <p className="absolute w-full mx-auto ml-10 text-4xl text-black -top-[250px] text-bold">{testimonials[currentIndex].text}</p>
           <div className="innertext"><span>{testimonials[currentIndex].name}</span></div>
           <div className="innertext"><span>{testimonials[currentIndex].role}</span></div>
         </div>
         <div className="flex flex-col items-end justify-between h-full p-12 border rounded-lg shadow-md ">
           <div className="flex flex-col items-end justify-between h-full p-2 border rounded-lg shadow-md ">
-            <button className="text-2xl text-black arrow up" onClick={handleUpClick}>
+            <button className="p-1 text-2xl text-black bg-white rounded-full" onClick={handleUpClick}>
               <BsArrowUp />
             </button>
-            <button className="text-2xl text-black arrow down" onClick={handleDownClick}>
+            <button className="p-1 text-2xl text-black bg-white rounded-full " onClick={handleDownClick}>
               <BsArrowDown />
             </button>
           </div>

@@ -1,9 +1,11 @@
+import { BsPlayBtn } from "react-icons/bs";
+import { CiPlay1 } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
 const Home_Footer = () => {
     return (
         <div>
-            <div className="flex justify-between px-20 py-10 bg-gray-100 max-md:flex-col max-md:px-5 max-md:py-5">
+            <div className="flex justify-between px-20 py-10 mt-10 max-md:flex-col max-md:px-5 max-md:py-5">
                 <div className="flex-col flex-1 p-4 space-y-2">
                     <div>
                         <h1 className="text-base font-semibold text-black">Let &apos; s Keep in Touch with Us!</h1>
@@ -59,10 +61,10 @@ const Home_Footer = () => {
 
                 </div>
                 <div className="flex-1">
-                    <div id="outer">
-                        <div id="inner-container">
-                            <div className="innertext"><span>A test</span></div>
-                            <div className="innertext"><span>A test with a second line</span></div>
+                    <div id="footer-card-outer">
+                        <div id="" className="absolute flex flex-col items-center justify-center top-[352px] rounded-br-lg rounded-tl-xl bg-white max-md:left-[443.5px] lg:left-[396.5px]">
+                            <div className="flex items-center gap-2 p-2 text-2xl text-black bg-transparent"><span>Play Company Video</span> <CiPlay1 /></div>
+
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,7 @@
-import cv1 from '../assets/cover-images/cv1.avif'
-import { CiSearch } from "react-icons/ci";
-import { IoArrowForward, IoHandLeft, IoMenu } from "react-icons/io5";
-import { Link } from 'react-router-dom'
+
+import { IoArrowForward } from "react-icons/io5";
 import cv4 from '../assets/cover-images/cv4.avif'
+import Logos from "./Logos";
 
 const Cover = () => {
     return (
@@ -88,19 +87,19 @@ const Cover = () => {
                             </div>
 
                             {/* Right Side */}
-                            <div className=" relative bg-white rounded-lg rounded-t-lg shadow-md  p-6  w-[400px]  max-md:mt-10 ">
-                                <div className=" text-black rounded-lg rounded-tr-[100px] shadow-lg bg-slate-100 space-y-4">
-                                    <h3 className="ml-2 text-lg font-bold ">New Location</h3>
-                                    <p>
-                                        Our new location is finally open for public! Get ready for our
-                                        grand opening promotion.
+                            <div className="coverCard">
+                                <div className="px-4 py-4 text-black rounded-lg shadow-lg ">
+
+                                    <p className='px-4 text-xl text-white w-[80%]'>
+                                        Our new location is finally open for public! Get ready for our grand opening promotion.
                                     </p>
                                     <div
                                         style={{
                                             backgroundImage: `url(${cv4})`,
                                             width: "100%",
-                                            height: "400px",
+                                            height: "350px",
                                         }}
+                                        className='p-2 mt-4 rounded-md'
                                     >
 
                                     </div>
@@ -108,11 +107,12 @@ const Cover = () => {
                                         <div className="inner-text"><span>New</span></div>
                                         <div className="inner-text"><span>Location</span></div>
                                     </div>
-                                    <button className="absolute top-0 right-0 flex items-center rounded-full btn">
 
-                                        <IoArrowForward className='text-md ' />
-                                    </button>
                                 </div>
+                                <button className="absolute right-[10px] w-[60px] h-[60px] z-10 flex items-center bg-black rounded-full top-[10px] btn">
+
+                                    <IoArrowForward className='text-xl ' />
+                                </button>
                             </div>
                         </div>
 
@@ -125,13 +125,7 @@ const Cover = () => {
                 </div>
 
             </div>
-            <div className="flex items-center justify-between">
-                <img src="/src/assets/logos/logo-2-1.svg" alt="Logo 1" className="h-14" />
-                <img src="/src/assets/logos/logo-4.svg" alt="Logo 2" className="h-14" />
-                <img src="/src/assets/logos/logo-5-1.svg" alt="Logo 3" className="h-14" />
-                <img src="/src/assets/logos/logoipsum.png" alt="Logo 4" className="h-14" />
-                <img src="/src/assets/logos/logo-7.svg" alt="Logo 5" className="h-14" />
-            </div>
+            <Logos />
         </>
     )
 }
