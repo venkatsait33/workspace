@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 import Logos from '../../components/Logos'
 import Our_Values from '../../components/Our_Values'
 import Work_Facilities from '../../components/Work_Facilities'
-import Cover from './Cover'
+import Cover from '../Cover'
 import './about.css'
 import About_Footer from './About_Footer'
 

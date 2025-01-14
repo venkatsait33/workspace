@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import cv2 from '../assets/cover-images/cv2.avif'
 import cv3 from '../assets/cover-images/cv3.avif'
 import cv4 from '../assets/cover-images/cv4.avif'
-import { BsArrow90DegDown, BsArrow90DegUp, BsArrowDown, BsArrowUp } from "react-icons/bs";
+import {  BsArrowDown, BsArrowUp } from "react-icons/bs";
 
 const testimonials = [
   {
@@ -49,7 +49,7 @@ const TestimonialCard = () => {
         backgroundRepeat: 'no-repeat',
       }}>
         <div id="inner-container">
-          <p className="absolute w-full mx-auto ml-10 text-4xl text-black -top-[250px] text-bold">{testimonials[currentIndex].text}</p>
+          <p className="absolute w-[70%] text-pretty mx-auto lg:ml-10 ml-5 max-md:text-2xl lg:text-4xl text-black -top-[250px] text-bold">{testimonials[currentIndex].text}</p>
           <div className="innertext"><span>{testimonials[currentIndex].name}</span></div>
           <div className="innertext"><span>{testimonials[currentIndex].role}</span></div>
         </div>
