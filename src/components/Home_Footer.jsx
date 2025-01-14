@@ -1,6 +1,6 @@
-import { BsPlayBtn } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
 const Home_Footer = () => {
     return (
@@ -62,6 +62,13 @@ const Home_Footer = () => {
                 </div>
                 <div className="flex-1">
                     <div id="footer-card-outer">
+                        <div className="absolute flex top-[300px]  flex-col gap-4 w-[350px] pl-4">
+                            <h2 className="text-xl font-semibold text-white ">Newsletter</h2>
+                            <div className="flex items-center justify-between w-full gap-2 px-2 border border-white rounded-lg">
+                                <input type="text" placeholder="Enter your email address....." className="w-full text-white bg-transparent input input-ghost placeholder:text-white" />
+                                <FaArrowRightLong className="text-xl font-bold text-white" />
+                            </div>
+                        </div>
                         <div id="" className="absolute flex flex-col items-center justify-center top-[352px] rounded-br-lg rounded-tl-xl bg-white max-md:left-[443.5px] lg:left-[396.5px]">
                             <div className="flex items-center gap-2 p-2 text-2xl text-black bg-transparent"><span>Play Company Video</span> <CiPlay1 /></div>
 

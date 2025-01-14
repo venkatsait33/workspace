@@ -20,10 +20,10 @@ const Work_Facilities = () => {
                     </div>
                 </div>
 
-                <div className="flex-2 max-md:order-2 max-md:w-full">
+                <div className="flex-2 max-md:w-full">
                     <div id="AboutCard">
                         <div>
-                            <img src="/src/assets/cover-images/cv1.avif" alt="" className="object-cover lg:w-full  h-[620px] rounded-lg" />
+                            <img src="/src/assets/cover-images/cv1.avif" alt="" className="object-cover lg:w-full max-md:h-[500px]  lg:h-[620px] rounded-lg" />
                         </div>
                         <div className="absolute right-0 flex flex-col items-center justify-center w-full h-full left-[110px] -top-64">
                             <div className="flex flex-col overflow-hidden text-sm text-white text-wrap"><span>
