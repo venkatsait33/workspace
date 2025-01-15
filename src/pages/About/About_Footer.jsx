@@ -4,7 +4,7 @@ import { MdLocationPin, MdMailOutline } from "react-icons/md";
 const About_Footer = () => {
     return (
         <div>
-            <div className="flex justify-between px-20 py-10 mt-10 max-md:flex-col max-md:px-5 max-md:py-5">
+            <div className="flex justify-between px-10 py-10 mt-10 max-md:flex-col max-md:px-5 max-md:py-5">
                 <div className="flex-1">
                     <div id="about-footer-card-outer">
                         <div id="" className="absolute flex flex-col  w-[30%] justify-center top-[220px]  rounded-tr-xl  bg-white max-md:left-[443.5px] ">

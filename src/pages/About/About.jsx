@@ -12,7 +12,7 @@ const About = () => {
         <div className='relative bg-white'>
             <Header />
             <div>
-                <Cover />
+                <Cover text='About' text1='Workspace' />
                 <div className='flex items-center m-4'>
                     <div className='w-[30%]'>
                         <p>Empowering Collaboration</p>

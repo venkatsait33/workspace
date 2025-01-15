@@ -11,7 +11,7 @@ const Work = () => {
                 <Header />
             </div>
             <div>
-                <Cover />
+                <Cover text='Work in' text1='Workspace' />
                 <Work_card />
                 <TestimonialCard />
             </div>
