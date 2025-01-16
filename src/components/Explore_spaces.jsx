@@ -2,7 +2,6 @@ import cv2 from '../assets/cover-images/cv2.avif'
 import cv3 from '../assets/cover-images/cv3.avif'
 import cv4 from '../assets/cover-images/cv4.avif'
 import cv5 from '../assets/cover-images/cv5.avif'
-import Cards from './Cards'
 
 const spaces = [
     {
@@ -34,7 +33,7 @@ const Explore_spaces = () => {
                     <div>
                         <div className="singleCard">
                             <img
-                                src="/src/assets/cover-images/cv1.avif" // Replace this with your image URL
+                                src={cv5} // Replace this with your image URL
                                 alt="Office Space"
                                 className="transition duration-200 singleCard-image hover:scale-110"
                             />

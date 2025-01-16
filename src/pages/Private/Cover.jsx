@@ -1,9 +1,9 @@
 import { FaCheckCircle } from "react-icons/fa";
-const Cover = () => {
+const Cover = ({ cover }) => {
     return (
         <div className=""> <div className="p-4">
             <div id="private-outer" style={{
-                backgroundImage: `url("/src/assets/card/card-img-3.jpg")`,
+                backgroundImage: `url(${cover})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

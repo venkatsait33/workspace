@@ -6,6 +6,7 @@ import img2 from '../../assets/img-2.webp'
 import img3 from '../../assets/cover-images/cv3.avif'
 import { FaRegCirclePlay } from "react-icons/fa6";
 import About_Footer from '../About/About_Footer'
+import cv1 from '../../assets/cover-images/cv4.avif'
 
 
 const Private = () => {
@@ -15,7 +16,7 @@ const Private = () => {
                 <Header />
             </div>
             <div className=''>
-                <Cover />
+                <Cover cover={cv1} />
                 <div className='p-4 m-2'>
                     <div className='flex items-center justify-center w-full gap-2'>
                         <picture>

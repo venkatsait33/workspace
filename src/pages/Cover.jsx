@@ -1,10 +1,10 @@
 
-const Cover = ({ text, text1 }) => {
+const Cover = ({ text, text1, cover }) => {
     return (
         <div>
             <div className="p-4">
                 <div id="cover-outer" style={{
-                    backgroundImage: `url("/src/assets/card/card-img-3.jpg")`,
+                    backgroundImage: `url(${cover})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',

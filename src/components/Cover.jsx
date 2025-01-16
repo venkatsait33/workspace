@@ -1,9 +1,9 @@
 
-import { IoArrowForward, IoMenu } from "react-icons/io5";
+import { IoArrowForward } from "react-icons/io5";
 import cv4 from '../assets/cover-images/cv4.avif'
+import cv1 from '../assets/cover-images/cv1.avif'
 import Logos from "./Logos";
-import { BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+
 import Header from "./Header";
 
 const Cover = () => {
@@ -14,7 +14,7 @@ const Cover = () => {
             <div
                 className="text-white "
                 style={{
-                    backgroundImage: "url('/src/assets/cover-images/cv1.avif')",
+                    backgroundImage: `url(${cv1})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
@@ -22,7 +22,7 @@ const Cover = () => {
                 <div className="">
                     <div className="mx-auto max-w-7xl lg:px-8">
                         {/* Navbar */}
-                     
+
 
                         {/* Hero Section */}
                         <div className="relative flex flex-col items-center gap-10 py-12 lg:flex-row lg:items-center lg:justify-between">

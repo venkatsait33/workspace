@@ -6,13 +6,14 @@ import Work_Facilities from '../../components/Work_Facilities'
 import Cover from '../Cover'
 import './about.css'
 import About_Footer from './About_Footer'
+import cvi from '../../assets/cover-images/cv5.avif'
 
 const About = () => {
     return (
         <div className='relative bg-white'>
             <Header />
             <div>
-                <Cover text='About' text1='Workspace' />
+                <Cover text='About' text1='Workspace' cover={cvi} />
                 <div className='flex items-center m-4'>
                     <div className='w-[30%]'>
                         <p>Empowering Collaboration</p>
