@@ -26,17 +26,17 @@ const Explore_spaces = () => {
     return (
         <div>
             <div className=''>
-                <h1 className='text-3xl text-center text-black'>Explore Spaces</h1>
+                <h1 className='mb-2 text-3xl text-center text-black'>Explore Spaces</h1>
             </div>
             <div className='flex items-center justify-center'>
 
-                <div className='grid grid-cols-2 gap-10 mt-4 lg:grid-cols-4'>
+                <div className='grid gap-10 mt-4 max-sm:grid-cols-1 max-md:grid-cols-2 lg:grid-cols-4'>
                     <div>
                         <div className="singleCard">
                             <img
                                 src="/src/assets/cover-images/cv1.avif" // Replace this with your image URL
                                 alt="Office Space"
-                                className="singleCard-image"
+                                className="transition duration-200 singleCard-image hover:scale-110"
                             />
                             <div className=" singleArrow-button">
                                 <div className=' singleArrow-icon'>
@@ -60,7 +60,7 @@ const Explore_spaces = () => {
                                     <img
                                         src={item.image} // Replace this with your image URL
                                         alt="Office Space"
-                                        className="card-image"
+                                        className="transition duration-200 hover:scale-110 card-image"
                                     />
                                     <div className="arrow-button">
                                         <svg

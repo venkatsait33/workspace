@@ -7,16 +7,16 @@ const About_Footer = () => {
             <div className="flex justify-between px-10 py-10 mt-10 max-md:flex-col max-md:px-5 max-md:py-5">
                 <div className="flex-1">
                     <div id="about-footer-card-outer">
-                        <div id="" className="absolute flex flex-col  w-[30%] justify-center top-[220px]  rounded-tr-xl  bg-white max-md:left-[443.5px] ">
-                            <div className="flex items-center gap-2 p-2 text-2xl text-black bg-transparent">Let&apos;s Keep in</div>
+                        <div id="" className="absolute flex flex-col  w-[30%] justify-center max-sm:top-[210px] md:top-[190px] lg:top-[270px] max-sm:left-0   rounded-tr-xl  bg-white md:left-0 max-[480px]:top-[220px] ">
+                            <div className="flex items-center gap-2 p-2 text-2xl leading-tight text-black bg-transparent">Let&apos;s Keep in</div>
 
                         </div>
-                        <div id="" className="absolute flex flex-col items-center w-[40%] justify-center top-[265px]  rounded-tr-xl bg-white max-md:left-[443.5px] ">
+                        <div id="" className="absolute flex flex-col items-center md:w-[70%] lg:w-[65%] justify-center max-sm:left-0 max-sm:w-[90%] max-sm:top-[280px] max-[480px]:top-[292px] md:top-[260px] lg:top-[310px]  rounded-tr-xl bg-white left-0 right-0 max-md:left-[443.5px] ">
                             <div className="flex flex-col w-full gap-2 p-2 text-2xl text-black bg-transparent">
                                 <h1>
                                     Touch with Us!
                                 </h1>
-                                <span className="text-sm text-gray-500">
+                                <span className="sm:text-[14px] text-sm leading-tight text-gray-500">
                                     Contact us today to explore the possibilities of our dynamic co-working space. Your ideal workspace in just a message or call away with us
                                 </span></div>
 
@@ -26,31 +26,31 @@ const About_Footer = () => {
                 </div>
 
                 <div className="flex flex-col flex-1 p-4 space-y-2">
-                    <div className="flex items-center justify-between pl-10 pr-10">
+                    <div className="flex gap-6 md:pr-10 md:pl-10 md:items-center md:justify-between">
                         <div>
                             <h1 className="text-base font-semibold text-black">Company</h1>
                             <ul>
-                                <li>About us</li>
-                                <li>Careers</li>
-                                <li>Contact</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">About us</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Careers</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Contact</li>
                             </ul>
                         </div>
                         <div>
                             <h1 className="text-base font-semibold text-black">Community</h1>
                             <ul>
-                                <li>Event</li>
-                                <li>Stories</li>
-                                <li>Partnership</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Event</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Stories</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Partnership</li>
                             </ul>
                         </div>
                         <div>
                             <h1 className="text-base font-semibold text-black">Resources</h1>
                             <ul>
-                                <li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">
                                     Blog
                                 </li>
-                                <li>FAQ</li>
-                                <li>Support</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">FAQ</li>
+                                <li className="transition-all duration-300 hover:link hover:text-black hover:scale-110">Support</li>
                             </ul>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const About_Footer = () => {
                         </div>
                         <div className="flex items-center justify-between text-base font-semibold text-black">
                             <MdLocationPin />
-                            <span>123 Wanderer Street, Any State,City</span>
+                            <span className="max-sm:text-sm">123 Wanderer Street, Any State,City</span>
                         </div>
                     </div>
 

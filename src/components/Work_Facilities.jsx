@@ -4,10 +4,10 @@ const Work_Facilities = () => {
     return (
         <div className="p-4">
             <h1 className="text-xl font-semibold text-center text-black text">Our Work Facilities</h1>
-            <div className="relative flex p-4 max-md:grid-cols-2 max-md:grid max-md:gap-2">
-                <div className="flex-1 h-full p-2 max-md:w-[350px] max-md:order-1 ">
+            <div className="relative p-4 lg:flex max-md:flex-col max-sm:flex-col max-md:gap-2">
+                <div className="flex-1 h-full p-2 max-md:w-[350px] max-md:order-1 max-sm:w-[280px] ">
                     <div>
-                        <img src="/src/assets/cover-images/cv3.avif" alt="" className="w-full max-md:h-[400px] lg:h-[500px] object-cover rounded-lg" />
+                        <img src="/src/assets/cover-images/cv3.avif" alt="" className="w-full max-md:h-[300px] lg:h-[500px] object-cover rounded-lg" />
                     </div>
                     <div className="flex items-center justify-between mt-3">
                         <div className="flex flex-col gap-2 text-xl font-bold text-black">
@@ -20,13 +20,13 @@ const Work_Facilities = () => {
                     </div>
                 </div>
 
-                <div className="flex-2 max-md:w-full">
+                <div className="max-md:order-2 md:flex-2 max-md:w-full max-sm:w-[280px]">
                     <div id="AboutCard">
                         <div>
                             <img src="/src/assets/cover-images/cv1.avif" alt="" className="object-cover lg:w-full max-md:h-[500px]  lg:h-[620px] rounded-lg" />
                         </div>
-                        <div className="absolute right-0 flex flex-col items-center justify-center w-full h-full left-[110px] -top-64">
-                            <div className="flex flex-col overflow-hidden text-sm text-white text-wrap"><span>
+                        <div className="absolute right-0 flex flex-col items-center justify-center w-full h-full lg:left-[350px] max-sm:-top-[200px] lg:-top-64">
+                            <div className="flex flex-col overflow-hidden text-sm text-white "><span>
                                 Spaces designed for relaxation
                             </span>
                                 <span> and collaboration,completed</span>
@@ -42,9 +42,9 @@ const Work_Facilities = () => {
                 </div>
 
 
-                <div className="flex-1 h-full p-2 max-md:w-[350px] max-md:order-1 ">
+                <div className="flex-1 h-full p-2 max-md:w-[350px] max-md:order-3  max-sm:w-[280px]">
                     <div>
-                        <img src="/src/assets/cover-images/cv3.avif" alt="" className="w-full max-md:h-[400px] lg:h-[500px] object-cover rounded-lg" />
+                        <img src="/src/assets/cover-images/cv3.avif" alt="" className="w-full max-md:h-[300px] lg:h-[500px] object-cover rounded-lg" />
                     </div>
                     <div className="flex items-center justify-between mt-3">
                         <div className="flex flex-col gap-2 text-xl font-bold text-black">

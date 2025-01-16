@@ -5,10 +5,10 @@ import { MdLocationPin, MdMailOutline } from "react-icons/md";
 const Home_Footer = () => {
     return (
         <div>
-            <div className="flex justify-between px-20 py-10 mt-10 max-md:flex-col max-md:px-5 max-md:py-5">
+            <div className="justify-between px-20 py-10 mt-10 lg:flex max-md:flex-col max-md:px-5 max-md:py-5">
                 <div className="flex-col flex-1 p-4 space-y-2">
                     <div>
-                        <h1 className="text-base font-semibold text-black">Let &apos; s Keep in Touch with Us!</h1>
+                        <h1 className="text-base font-semibold text-black">Let&apos;s Keep in Touch with Us!</h1>
                     </div>
                     <div>
                         <p>
@@ -26,11 +26,11 @@ const Home_Footer = () => {
                         </div>
                         <div className="flex items-center justify-between text-base font-semibold text-black">
                             <MdLocationPin />
-                            <span>123 Wanderer Street, Any State,City</span>
+                            <span className="max-sm:text-sm">123 Wanderer Street, Any State,City</span>
                         </div>
                     </div>
                     <div className="divider"></div>
-                    <div className="flex items-center justify-between pl-10 pr-10">
+                    <div className="flex items-center justify-between lg:pr-10 lg:pl-10">
                         <div>
                             <h1 className="text-base font-semibold text-black">Company</h1>
                             <ul>
@@ -62,15 +62,15 @@ const Home_Footer = () => {
                 </div>
                 <div className="flex-1">
                     <div id="footer-card-outer">
-                        <div className="absolute flex top-[300px]  flex-col gap-4 w-[350px] pl-4">
-                            <h2 className="text-xl font-semibold text-white ">Newsletter</h2>
-                            <div className="flex items-center justify-between w-full gap-2 px-2 border border-white rounded-lg">
-                                <input type="text" placeholder="Enter your email address....." className="w-full text-white bg-transparent input input-ghost placeholder:text-white" />
-                                <FaArrowRightLong className="text-xl font-bold text-white" />
+                        <div className="absolute flex  max-sm:top-[245px]  md:top-[300px]  flex-col gap-4 w-[350px] pl-4">
+                            <h2 className="font-semibold text-white md:text-xl ">Newsletter</h2>
+                            <div className="flex items-center justify-between md:gap-2 w-[280px] px-2 md:px-2 border border-white rounded-lg md:w-full">
+                                <input type="text" placeholder="Enter your email address....." className="max-w-xs text-white bg-transparent md:w-full input input-ghost placeholder:text-sm placeholder:text-white" />
+                                <FaArrowRightLong className="font-bold text-white md:text-xl" />
                             </div>
                         </div>
-                        <div id="" className="absolute flex flex-col items-center justify-center top-[352px] rounded-br-lg rounded-tl-xl bg-white max-md:left-[443.5px] lg:left-[396.5px]">
-                            <div className="flex items-center gap-2 p-2 text-2xl text-black bg-transparent"><span>Play Company Video</span> <CiPlay1 /></div>
+                        <div id="" className="absolute flex flex-col items-center justify-center max-sm:top-[340px] md:top-[352px] rounded-br-lg rounded-tl-xl bg-white md:left-[366.5px] max-[430px]:left-[180px] max-sm:left-[200px]  max-[360px]:left-[40%] lg:left-[59.75%]">
+                            <div className="flex items-center gap-2 p-2 text-black bg-transparent md:text-2xl"><span>Play Company Video</span> <CiPlay1 /></div>
 
                         </div>
                     </div>

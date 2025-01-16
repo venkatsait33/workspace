@@ -32,7 +32,7 @@ const Our_Values = () => {
           <h1 className="text-2xl font-bold text-black">Our Values</h1>
           <p>see More</p>
         </div>
-        <div className="grid gap-2 p-2 max-md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-2 p-2 max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           {
             values.map((value, index) => {
               return (

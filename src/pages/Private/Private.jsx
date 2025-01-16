@@ -19,15 +19,18 @@ const Private = () => {
                 <div className='p-4 m-2'>
                     <div className='flex items-center justify-center w-full gap-2'>
                         <picture>
-                            <img src={img1} alt="" className='object-cover w-full md:h-[500px] rounded-lg ' />
+                            <img src={img1} alt="" className='object-cover w-full md:h-[500px] rounded-lg transition ease-in-out
+                             duration-300 hover:scale-90 ' />
                         </picture>
                         <picture>
-                            <img src={img3} alt="" className='object-cover w-full md:h-[500px] rounded-lg ' />
+                            <img src={img3} alt="" className='object-cover w-full md:h-[500px] rounded-lg  transition ease-in-out
+                             duration-300 hover:scale-90' />
                         </picture>
                     </div>
                     <div className='relative mt-2'>
                         <picture>
-                            <img src={img2} alt="" className='object-center w-full h-[500px] rounded-lg ' />
+                            <img src={img2} alt="" className='object-center w-full md:h-[500px] rounded-lg transition ease-in-out
+                             duration-300 hover:scale-90' />
                         </picture>
                         <div className='absolute text-[70px] text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
                             <FaRegCirclePlay className='' />

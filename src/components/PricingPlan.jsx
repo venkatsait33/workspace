@@ -18,11 +18,11 @@ const PricingPlan = () => {
         <div className='w-full '>
 
             <h1 className='mt-10 text-4xl font-bold text-center text-black'>Pricing Plan</h1>
-            <div className="grid p-2 mt-10 max-md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid p-2 mt-10 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                     plans.map((plan, index) => {
                         return (
-                            <div key={index} className='flex flex-col items-center justify-center mt-10'>
+                            <div key={index} className='flex flex-col items-center justify-center mt-10 '>
                                 <div className=" pricing-card">
 
                                     <div className="card-header"><h1 className='absolute z-[-1] text-black text-[20px] top-[-30px]'>{plan.plan}</h1></div>

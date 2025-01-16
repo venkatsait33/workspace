@@ -3,15 +3,15 @@ const Cover = ({ text, text1 }) => {
     return (
         <div>
             <div className="p-4">
-                <div id="outer" style={{
+                <div id="cover-outer" style={{
                     backgroundImage: `url("/src/assets/card/card-img-3.jpg")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}>
-                    <div id="inner-container">
-                        <div className="innertext"><span>{text}</span></div>
-                        <div className="innertext"><span>{text1}</span></div>
+                    <div id="cover-inner-container">
+                        <div className="cover-innerText"><span>{text}</span></div>
+                        <div className="cover-innerText"><span>{text1}</span></div>
                     </div>
 
                 </div>

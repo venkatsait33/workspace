@@ -49,16 +49,16 @@ const TestimonialCard = () => {
         backgroundRepeat: 'no-repeat',
       }}>
         <div id="inner-container">
-          <p className="absolute w-[70%] text-pretty mx-auto lg:ml-10 ml-5 max-md:text-2xl lg:text-4xl text-black -top-[250px] text-bold">{testimonials[currentIndex].text}</p>
+          <p className="absolute max-sm:w-[70%] text-pretty mx-auto lg:ml-10 ml-5 max-md:text-2xl max-sm:text-md md:text-4xl text-black md:-top-[250px] max-sm:-top-[310px] text-bold">{testimonials[currentIndex].text}</p>
           <div className="innertext"><span>{testimonials[currentIndex].name}</span></div>
           <div className="innertext"><span>{testimonials[currentIndex].role}</span></div>
         </div>
-        <div className="flex flex-col items-end justify-between h-full p-12 border rounded-lg shadow-md ">
+        <div className="flex flex-col items-end justify-between h-full max-sm:h-[80%] md:p-12 max-sm:p-2 ">
           <div className="flex flex-col items-end justify-between h-full p-2 border rounded-lg shadow-md ">
-            <button className="p-1 text-2xl text-black bg-white rounded-full" onClick={handleUpClick}>
+            <button className="p-1 text-black bg-white rounded-full md:text-2xl" onClick={handleUpClick}>
               <BsArrowUp />
             </button>
-            <button className="p-1 text-2xl text-black bg-white rounded-full " onClick={handleDownClick}>
+            <button className="p-1 text-black bg-white rounded-full md:text-2xl " onClick={handleDownClick}>
               <BsArrowDown />
             </button>
           </div>

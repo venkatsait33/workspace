@@ -1,6 +1,6 @@
 .coverCard {
   position: relative;
-  width: 350px;
+  width: 325px;
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -19,6 +19,8 @@
   border-radius: 50%;
   z-index: 1;
 }
+
+
 
 #cover-card {
   display: flex;
@@ -235,6 +237,7 @@
   color: white;
 }
 
+
 .card-header {
   position: relative;
   top: 0px; /* Adjusts overlap positioning */
@@ -340,6 +343,8 @@
   z-index: 1; /* to overcome the overlapping with the text */
 }
 
+
+
 #footer-card-outer {
   width: 100%;
   height: 400px;
@@ -359,3 +364,22 @@
   background-color: white;
 }
 
+@media screen and (max-width: 420px) {
+  .coverCard::before {
+    content: "";
+    position: absolute;
+    top: -50px; /* Adjust to control the outward curve size */
+    right: -70px; /* Adjust for position */
+    width: 150px; /* Adjust the curve size */
+    height: 150px; /* Adjust the curve size */
+    background-color: white; /* Match your background color */
+    border-radius: 50%;
+    z-index: 1;
+  }
+    .pricing-card {
+    width: 300px;
+  }
+  .innertext{
+    font-size: 16px;
+  }
+}

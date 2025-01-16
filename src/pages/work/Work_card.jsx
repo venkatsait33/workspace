@@ -34,13 +34,13 @@ const word_data = [{
 const Work_card = () => {
     return (
         <div className='relative flex flex-col gap-8 p-8 '>
-            <div className='grid grid-cols-2 gap-4 '>
+            <div className='grid gap-4 max-sm:space-y-4 md:grid-cols-2 '>
 
                 {
                     word_data.map((item, index) => {
                         return (
                             <div key={index}>
-                                <div id='outer' style={{
+                                <div id='outer' className='transition duration-200 hover:scale-95 ' style={{
                                     backgroundImage: `url(${item.image})`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',

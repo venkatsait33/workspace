@@ -1,45 +1,34 @@
 
-import { IoArrowForward } from "react-icons/io5";
+import { IoArrowForward, IoMenu } from "react-icons/io5";
 import cv4 from '../assets/cover-images/cv4.avif'
 import Logos from "./Logos";
+import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const Cover = () => {
     return (
-        <>
+        <div className="p-2">
+            <Header />
 
             <div
-                className="text-white bg-gray-900"
+                className="text-white "
                 style={{
                     backgroundImage: "url('/src/assets/cover-images/cv1.avif')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="bg-black bg-opacity-50">
-                    <div className="pt-2 mx-auto max-w-7xl lg:px-8">
+                <div className="">
+                    <div className="mx-auto max-w-7xl lg:px-8">
                         {/* Navbar */}
-                        <nav className="flex items-center justify-between ">
-                            <div className="flex items-center bg-white space-x-2 w-[30%] rounded-r-xl">
-                                <h1 className="text-xl font-bold text-black">WORKSPC</h1>
-                                <span className="text-sm text-black rounded-md ">
-                                    Best Co-Working Space 2023
-                                </span>
-                            </div>
-                            <div className="flex items-center px-6 space-x-6">
-                                <button>
-                                    <i className="text-xl fas fa-search"></i>
-                                </button>
-                                <button className="px-4 py-2 text-white bg-black rounded-lg">
-                                    Login
-                                </button>
-                            </div>
-                        </nav>
+                     
 
                         {/* Hero Section */}
                         <div className="relative flex flex-col items-center gap-10 py-12 lg:flex-row lg:items-center lg:justify-between">
                             {/* Left Side */}
-                            <div className=" space-y-">
-                                <h2 className="text-5xl font-bold leading-tight">Work Better,</h2>
+                            <div className="pl-2 mt-2 space-y-2">
+                                <h2 className="font-bold leading-tight md:text-5xl max-sm:text-3xl">Work Better,</h2>
 
                                 {/* Avatars */}
                                 <div className="flex items-center space-x-2 ">
@@ -63,10 +52,10 @@ const Cover = () => {
                                             +
                                         </div>
                                     </div>
-                                    <h2 className="text-5xl font-bold leading-tight">Together</h2>
+                                    <h2 className="font-bold leading-tight md:text-5xl max-sm:text-3xl">Together</h2>
                                 </div>
                                 {/* Buttons */}
-                                <div className="flex items-center justify-between max-md:flex-col lg:gap-10">
+                                <div className="flex justify-start mt-2 lg:flex-col max-md:flex-col lg:gap-4">
                                     <div className='flex items-center gap-2'>
                                         <button className="text-black bg-white btn btn-sm btn-outline ">
                                             Book Now
@@ -76,7 +65,7 @@ const Cover = () => {
                                         </button>
                                     </div>
 
-                                    <div>
+                                    <div className="">
                                         <article className='text-wrap'>
                                             <p className="text-justify text-gray-300 lg:text-lg">
                                                 An inspiring co-working environment designed for freelancers and teams to achieve greatness.
@@ -90,16 +79,15 @@ const Cover = () => {
                             <div className="coverCard">
                                 <div className="px-4 py-4 text-black rounded-lg shadow-lg ">
 
-                                    <p className='px-4 text-xl text-white w-[80%]'>
+                                    <p className='px-2 text-xl text-white w-[80%] text-pretty leading-tight'>
                                         Our new location is finally open for public! Get ready for our grand opening promotion.
                                     </p>
                                     <div
                                         style={{
                                             backgroundImage: `url(${cv4})`,
-                                            width: "100%",
-                                            height: "350px",
+
                                         }}
-                                        className='p-2 mt-4 rounded-md'
+                                        className='p-2 mt-4 rounded-md w-full  md:h-[300px] max-md:h-[200px] bg-cover bg-center'
                                     >
 
                                     </div>
@@ -109,7 +97,7 @@ const Cover = () => {
                                     </div>
 
                                 </div>
-                                <button className="absolute right-[10px] w-[60px] h-[60px] z-10 flex items-center bg-black rounded-full top-[10px] btn">
+                                <button className="absolute right-2 lg:right-[10px] lg:w-[60px] lg:h-[60px] z-10 flex items-center bg-black rounded-full top-4 lg:top-[10px] btn">
 
                                     <IoArrowForward className='text-xl ' />
                                 </button>
@@ -126,7 +114,7 @@ const Cover = () => {
 
             </div>
             <Logos />
-        </>
+        </div>
     )
 }
 
